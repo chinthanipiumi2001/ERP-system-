@@ -1,2 +1,3 @@
 # ERP-system-
-create ERP system PHP/ My SQL
+# ERP System - Full Stack Developer Assignment
+
