@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Report</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        .form-container {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .table-container {
+            margin-top: 30px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+        .btn-search {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Invoice Report</h2>
+        <!-- Search Form for Date Range -->
+        <div class="form-container">
+            <form id="invoiceSearchForm" method="POST" action="../backend/invoice_report.php">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="start_date">Start Date</label>
+                        <input type="date" class="form-control" id="start_date" name="start_date" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="end_date">End Date</label>
+                        <input type="date" class="form-control" id="end_date" name="end_date" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-search">Search Invoices</button>
+            </form>
+        </div>
+
+        <!-- Invoice Report Table -->
+        <div class="table-container">
+            <h2>Invoice Report Results</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Invoice No</th>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Customer District</th>
+                        <th>Item Count</th>
+                        <th>Invoice Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row. This should be dynamically populated with PHP after fetching from the database -->
+                    <tr>
+                        <td>1001</td>
+                        <td>2021-04-01</td>
+                        <td>Mr. Saman Kumara</td>
+                        <td>Colombo</td>
+                        <td>2</td>
+                        <td>7500.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

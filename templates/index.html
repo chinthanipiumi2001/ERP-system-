@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="../backend/customer.php" method="POST" onsubmit="return validateCustomerForm()">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <select class="form-control" name="title" id="title" required>
+                    <option value="">Select</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Dr">Dr</option>
+                    
+                </select>
+
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control" id="fname" name="fname" required>
+                </div>
+
+                <div class="form-group"></div>
+                    <label for="fname">Middle Name</label>
+                    <input type="text" class="form-control" id="mname" name="mname" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name="lname" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" class="form-control" id="contact" name="contact" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="district">District</label>
+                    <input type="text" class="form-control" id="district" name="district" required>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validateCustomerForm() {
+            var contact = document.getElementById('contact').value;
+            if (isNaN(contact) || contact.length != 10) {
+                alert("Please enter a valid 10-digit contact number.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
