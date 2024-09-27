@@ -26,6 +26,13 @@ Basic form validation is implemented using JavaScript for mandatory fields and n
 
 The system assumes invoices and related item information are stored in a database table with a many-to-one relationship between invoices and customers/items and date ranges for reports are selected by the user to filter invoice data.
 
+## Technology Stack 
+📌️ Backend -: PHP <br>
+📌️Frontend: HTML, CSS (Bootstrap for UI), JavaScript<br>
+📌️ Database: MySQL
+</br>
+
+
 
 
 
