@@ -32,6 +32,32 @@ The system assumes invoices and related item information are stored in a databas
 📌️ Database: MySQL
 </br>
 
+## Project Setup 
+- Prerequisites
+
+    1. XAMPP/WAMP (or any local server with PHP and MySQL support)
+    2. PHP 7.4+
+    3. MySQL
+
+## Step to Setup the project 
+1. Clone or download the repsitory 
+    - If using Github 
+    ```bash
+   git clone https://github.com/chinthanipiumi2001/ERP-system-.git
+   ```
+Alternatively, download the ZIP file and extract it into the web server’s root directory (e.g., C:/xampp/htdocs/erp-system for XAMPP).
+
+2. Import the database
+
+- Open phpMyAdmin (usually available at http://localhost/phpmyadmin).
+
+- Create a new database named erp_db.
+- Import the provided SQL file (erp_db.sql) into this database. This file contains the necessary tables and initial data.
+
+- Click on the Import tab in phpMyAdmin, choose the erp_db.sql file, and click Go. 
+
+3. Configure the Database Connection 
+
 
 
 
