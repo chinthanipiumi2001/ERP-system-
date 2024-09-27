@@ -57,10 +57,18 @@ Alternatively, download the ZIP file and extract it into the web server’s root
 - Click on the Import tab in phpMyAdmin, choose the erp_db.sql file, and click Go. 
 
 3. Configure the Database Connection 
+    - In the includes/dump.php file, ensure the following credentials match your local setup
 
+```bash
+  $servername = "localhost";
+  $username = "root";    // Replace with your MySQL username
+  $password = "";        // Replace with your MySQL password
+  $dbname = "dump.sql";    // Name of the database
+  ```
+## Project Structure 
+<img src="./img/img 1.png" width="250" height="700">
 
-
-
+## How to Use 
 
 
 
