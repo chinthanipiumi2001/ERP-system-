@@ -6,6 +6,25 @@ Project Overview
 
 ✅ This project is an ERP (Enterprise Resource Planning) system built using PHP and MySQL. It allows for the management of customers and items, with the ability to create, update, delete, and search system data. The system also generates reports related to invoices and items.
 
+## Assumptions Made
+
+1. Customer Data
+
+The District field is assumed to be a free-text field where the user can input any district.
+
+The contact number is validated as a 10-digit numeric string.
+
+2. Item Categories
+
+Predefined categories (e.g., Electronics, Furniture, Clothing) and subcategories (e.g., Mobile, Laptop, Sofa) are used. These can be easily extended by modifying the code or adding them dynamically from the database.
+
+3. Form Validation 
+
+Basic form validation is implemented using JavaScript for mandatory fields and numeric validations (like contact numbers and item prices). 
+
+4. Invoice Reporting 
+
+The system assumes invoices and related item information are stored in a database table with a many-to-one relationship between invoices and customers/items and date ranges for reports are selected by the user to filter invoice data.
 
 
 
