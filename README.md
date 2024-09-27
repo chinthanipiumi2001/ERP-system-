@@ -69,6 +69,25 @@ Alternatively, download the ZIP file and extract it into the web server’s root
 <img src="./img/img 1.png" width="250" height="700">
 
 ## How to Use 
+1. Register customer 
 
+- Go to http://localhost/backend/customer.php
+- Fill in the required fields (Title, First Name, Last Name, Contact Number, District).
+- Submit the form to store the data in the database.
+
+2. Register an Item
+- Go to http://localhost/erp-system/item.php
+
+- Fill in the required fields (Item Code, Name, Category, Sub Category, Quantity, Unit Price).
+Submit the form to store the item in the database.
+
+3. View Registered Customers
+
+- Go to http://localhost/erp-system/customer_list.php
+- You will see a list of all registered customers.
+
+4. Additional Reports
+
+- If reports are implemented (e.g., Invoice Report, Item Report), you can filter data based on date range or item categories.
 
 
